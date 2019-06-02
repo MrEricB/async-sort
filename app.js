@@ -5,7 +5,6 @@ var sorted = []
 var async_sort = new Promise((resolve, reject) => {
     numbers.forEach((num) => {
         setTimeout(() => {
-            // console.log(num);
             sorted.push(num);
             if(numbers.length === sorted.length){
                 resolve(sorted);
